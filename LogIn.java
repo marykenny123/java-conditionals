@@ -21,9 +21,7 @@ public class LogIn {
             System.out.println("Nombre de usuario o contraseña incorrecta");
         }
 
-        /* versión switch ---- he probado pero no funciona correctamente, si los datos son correctos
-        devuelve que son correctos pero tb default que no son correctos
-        * */
+        // versión switch para practicar
         System.out.print("P fv teclea tu nombre de usuaria (versión switch): ");
         String username1 = scanner.nextLine();
         System.out.print("P fv teclea tu contraseña (versión switch): ");
@@ -37,12 +35,10 @@ public class LogIn {
                         break;
                     default:
                         System.out.println("Nombre de usuario o contraseña incorrecta");
-                        break;
                 }
-            default:
-                // la idea es que si no fue correcto usuario no revisar contraseña y devolver msj de datos erroneos
-                System.out.println("**Nombre de usuario o contraseña incorrecta");
                 break;
+            default:
+                System.out.println("**Nombre de usuario o contraseña incorrecta");
         }
 
 
