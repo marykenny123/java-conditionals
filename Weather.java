@@ -25,21 +25,6 @@ public class Weather {
             System.out.println("Que calooorrrrr");
         } else {
             System.out.println("Ahí no hay quien viva");
-        } System.out.print("P fv teclea la temperatura de tu ciudad en celsius: ");
-        Scanner scanner = new Scanner(System.in);
-        byte temp = scanner.nextByte();
-        if (temp < 0) {
-            System.out.println("Te estás congelando");
-        } else if (temp <= 10) {
-            System.out.println("Hace mucho frío");
-        } else if (temp <= 17) {
-            System.out.println("Con un abrigo estás bien");
-        } else if (temp <= 25) {
-            System.out.println("Parece que ha llegado el verano");
-        } else if (temp <= 35) {
-            System.out.println("Que calooorrrrr");
-        } else {
-            System.out.println("Ahí no hay quien viva");
         }
     scanner.close();
     }

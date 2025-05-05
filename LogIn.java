@@ -9,7 +9,6 @@ public class LogIn {
         no haga un salto de línea.
          */
 
-        // -------------------- revisar switch no funciona bien
         Scanner scanner = new Scanner(System.in); /*
         System.out.print("P fv teclea tu nombre de usuaria: ");
         String username = scanner.nextLine();
