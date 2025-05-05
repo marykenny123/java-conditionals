@@ -9,7 +9,8 @@ public class LogIn {
         no haga un salto de línea.
          */
 
-        Scanner scanner = new Scanner(System.in); /*
+        // he probado contra usuario "user" y contraseña "pswd"
+        Scanner scanner = new Scanner(System.in);
         System.out.print("P fv teclea tu nombre de usuaria: ");
         String username = scanner.nextLine();
         System.out.print("P fv teclea tu contraseña: ");
@@ -19,24 +20,28 @@ public class LogIn {
         } else {
             System.out.println("Nombre de usuario o contraseña incorrecta");
         }
-*/
-        // versión switch
+
+        /* versión switch ---- he probado pero no funciona correctamente, si los datos son correctos
+        devuelve que son correctos pero tb default que no son correctos
+        * */
         System.out.print("P fv teclea tu nombre de usuaria (versión switch): ");
         String username1 = scanner.nextLine();
         System.out.print("P fv teclea tu contraseña (versión switch): ");
         String password1 = scanner.nextLine();
         switch (username1) {
-            case ("user"):
+            case "user":
+                // la idea es si usuario correcto entonces comprobar contraseña
                 switch (password1) {
-                    case ("pswd"):
+                    case "pswd":
                         System.out.println("Acceso concedido");
                         break;
-                   /* default:
+                    default:
                         System.out.println("Nombre de usuario o contraseña incorrecta");
-                        break;*/
+                        break;
                 }
             default:
-                System.out.println("Nombre de usuario o contraseña incorrecta");
+                // la idea es que si no fue correcto usuario no revisar contraseña y devolver msj de datos erroneos
+                System.out.println("**Nombre de usuario o contraseña incorrecta");
                 break;
         }
 
